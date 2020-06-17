@@ -29,7 +29,7 @@ void addRoute(const vector<pair<int, int>> &route,
 
 int main()
 {
-    const unsigned kTestCasesNumber = 5;
+    const unsigned kTestCasesNumber = 6;
 
     for (unsigned test = 1; test <= kTestCasesNumber; ++test)
     {
@@ -146,6 +146,7 @@ void dfs(const Graph &graph,
             route.pop_back();
         }
 
+    used[v] = false;
     route.pop_back();
 }
 
@@ -153,6 +154,6 @@ void addRoute(const vector<pair<int, int>> & route, vector<vector<int>> &output)
 {
     vector<int> path;
     for (const auto &node : route)
-        path.push_back(node.NODE);
+        path.push_back(node.NODE + 1);
     output.push_back(path);
 }
