@@ -84,7 +84,7 @@ void addRoute(const vector<pair<int, int>> &route,
 int main()
 {
     // Количество тестовых файлов
-    const unsigned kTestCasesNumber = 5;
+    const unsigned kTestCasesNumber = 6;
 
     // Начинаем обрабатывать каждый тест
     for (unsigned test = 1; test <= kTestCasesNumber; ++test)
@@ -233,6 +233,7 @@ void dfs(const Graph &graph,
         }
 
     // Когда выходим из вершины, удаляем себя из маршрута
+    used[v] = false;
     route.pop_back();
 }
 
@@ -241,6 +242,6 @@ void addRoute(const vector<pair<int, int>> & route, vector<vector<int>> &output)
 {
     vector<int> path;   // Сюда перепишем маршрут
     for (const auto &node : route)
-        path.push_back(node.NODE);
+        path.push_back(node.NODE + 1);
     output.push_back(path); // И запихнём в ответ
 }
