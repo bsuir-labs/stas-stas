@@ -9,103 +9,103 @@
 
 ### Вход
 
-![img0]()
+![img0](https://github.com/bsuir-labs/stas-stas/raw/master/Lab1/algo/img/0.png)
 
 ### Шаг 1
 
 Создаём и заполняем множество рёбер графа
 
-![img1]()
+![img1](https://github.com/bsuir-labs/stas-stas/raw/master/Lab1/algo/img/1.png)
 
 ### Шаг 2
 
 Создаём и заполняем множество непроверенных вершин
 
-![img2]()
+![img2](https://github.com/bsuir-labs/stas-stas/raw/master/Lab1/algo/img/2.png)
 
 ### Шаг 3
 
 Создаём переменные Cycles и Way.
 
-![img3]()
+![img3](https://github.com/bsuir-labs/stas-stas/raw/master/Lab1/algo/img/3.png)
 
 ### Шаг 4
 
 Из множества непроверенных вершин достаём вершину (А) и помещаем её как первую вершину в переменную Way, удаляем эту вершину из множества NotChecked.
 
-![img4]()
+![img4](https://github.com/bsuir-labs/stas-stas/raw/master/Lab1/algo/img/4.png)
 
 ### Шаг 5
 
 Рассматриваем вершины, смежные с последней вершиной в пути. Добавляем первую непосещённую вершину в путь и продолжаем работу уже с ней. Если пути вперёд нет, возвращаемся на один шаг назад и рассматриваем следующую вершину, смежную с последней вершиной в пути. Если следующая вершина равна первой вершине в пути, значит найден цикл.
 
-![img5]()
+![img5](https://github.com/bsuir-labs/stas-stas/raw/master/Lab1/algo/img/5.png)
 
 ### Шаг 6
 
 Так как найденный цикл имеет длину больше, чем положено, возвращаемся назад по пути и продолжаем искать циклы.
 
-![img6]()
+![img6](https://github.com/bsuir-labs/stas-stas/raw/master/Lab1/algo/img/6.png)
 
 ### Шаг 7
 
 Находим следующий цикл.
 
-![img7]()
+![img7](https://github.com/bsuir-labs/stas-stas/raw/master/Lab1/algo/img/7.png)
 
 ### Шаг 8
 
 Найденный цикл имеет длину 12, так что сохраняем его в ответ.
 
-![img8]()
+![img8](https://github.com/bsuir-labs/stas-stas/raw/master/Lab1/algo/img/8.png)
 
 ### Шаг 9
 
 Так как путей, начинающихся с вершины А больше нет, выходим из пути и начинаем новый обход со следующей вершины из множества непроверенных вершин. Удаляем вершину В из множества непроверенных вершин.
 
-![img9]()
+![img9](https://github.com/bsuir-labs/stas-stas/raw/master/Lab1/algo/img/9.png)
 
 ### Шаг 10
 
 Первый найденный цикл имеет неподходящую длину, ищем дальше.
 
-![img10]()
+![img10](https://github.com/bsuir-labs/stas-stas/raw/master/Lab1/algo/img/10.png)
 
 ### Шаг 11
 
 Найден подходящий цикл. Сохраняем его в ответ (на иллюстрациях в целях экономии места не стал его обозначать в ответах, т.к. он такой же, как и первый найденный).
 
-![img11]()
+![img11](https://github.com/bsuir-labs/stas-stas/raw/master/Lab1/algo/img/11.png)
 
 ### Шаг 12
 
 Hачинаем новый обход со следующей вершины из множества непроверенных вершин. Удаляем вершину C из множества непроверенных вершин.
 
-![img12]()
+![img12](https://github.com/bsuir-labs/stas-stas/raw/master/Lab1/algo/img/12.png)
 
 ### Шаг 13
 
 Ни один найденный цикл с данной вершиной не подходит.
 
-![img13]()
+![img13](https://github.com/bsuir-labs/stas-stas/raw/master/Lab1/algo/img/13.png)
 
 ### Шаг 14
 
 Hачинаем новый обход со следующей вершины из множества непроверенных вершин. Удаляем вершину D из множества непроверенных вершин. Ни один из найденных циклов не подходит по длине
 
-![img14]()
+![img14](https://github.com/bsuir-labs/stas-stas/raw/master/Lab1/algo/img/14.png)
 
 ### Шаг 15
 
 Hачинаем новый обход со следующей вершины из множества непроверенных вершин. Удаляем вершину Е из множества непроверенных вершин. Первый найденный цикл не подходит по длине
 
-![img15]()
+![img15](https://github.com/bsuir-labs/stas-stas/raw/master/Lab1/algo/img/15.png)
 
 ### Шаг 16
 
 Найденный цикл имеет длину 12, так что сохраняем его в ответ.
 
-![img16]()
+![img16](https://github.com/bsuir-labs/stas-stas/raw/master/Lab1/algo/img/16.png)
 
 ### Шаг 17
 
